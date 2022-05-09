@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Layout</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: lightgrey;
+        }
+
+        .nav-area {
+            background-color: rgb(22, 80, 189);
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .left-nav {
+            display: flex;
+            margin-left: 250px;
+        }
+
+        .left-nav h3 {
+            margin-left: 5px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 15px;
+        }
+
+        .left-nav img {
+            width: 50px;
+            height: 60px;
+            position: relative;
+            top: 10px;
+        }
+
+        .right-nav {
+            display: flex;
+            margin-right: 250px;
+        }
+
+        .right-nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .right-nav ul li {
+            color: white;
+            margin: 20px;
+        }
+
+        .right-nav img {
+            height: 60px;
+            position: relative;
+            top: 15px;
+        }
+
+        .main-content {
+            background-color: white;
+            margin-left: 250px;
+            margin-right: 250px;
+            border-radius: 10px;
+            /* color: rgb(22, 80, 189); */
+        }
+
+        .main-content h2 {
+            color: rgb(22, 80, 189);
+            margin-left: 15px;
+            margin-top: 40px;
+        }
+
+        .box1 {
+            display: flex;
+            margin-top: 10px;
+            /* margin-left: 250px;
+            margin-right: 250px; */
+
+        }
+
+        .box1 img {
+            width: 60px;
+        }
+
+        .box1 h4 {
+            margin-left: 10px;
+        }
+
+        .player {
+            width: 33.33%;
+            display: flex;
+            justify-content: center;
+        }
+
+        hr {
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+
+        .box2 {
+            display: flex;
+
+        }
+
+        .box2 img {
+            width: 150px;
+        }
+
+        .blog {
+            display: flex;
+            margin-left: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-area">
+        <div class="left-nav">
+            <img src="images/icons/logo.png" alt="">
+            <h3>Idea</h3>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+            <img src="images/icons/profile.png" alt="">
+        </div>
+    </div>
+    <div class="main-content">
+        <h2>Top Player</h2>
+        <div class="box1">
+            <div class="player">
+                <img src="images/players/player-1.png" alt="">
+                <h4>Name-Name</h4>
+            </div>
+            <div class="player">
+                <img src="images/players/player-2.png" alt="">
+                <h4>Name-Name</h4>
+            </div>
+            <div class="player">
+                <img src="images/players/player-3.png" alt="">
+                <h4>Name-Name</h4>
+            </div>
+        </div>
+        <div class="box1">
+
+            <div class="player">
+                <img src="images/players/player-4.png" alt="">
+                <h4>Name-Name</h4>
+            </div>
+            <div class="player">
+                <img src="images/players/player-5.png" alt="">
+                <h4>Name-Name</h4>
+            </div>
+            <div class="player">
+                <img src="images/players/player-6.png" alt="">
+                <h4>Name-Name</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="box2">
+            <div class="blog">
+                <img src="images/blogs/blog-1.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="blog">
+                <img src="images/blogs/blog-2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="blog">
+                <img src="images/blogs/blog-3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="blog">
+                <img src="images/blogs/blog-4.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container2">
+        <h4>Letest course</h4>
+        <div class="course">
+            <img src="images/courses/course-1.png" alt="">
+        </div>
+        <div class="course">
+            <img src="images/courses/course-2.png" alt="">
+        </div>
+        <div class="course">
+            <img src="images/courses/course-3.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
