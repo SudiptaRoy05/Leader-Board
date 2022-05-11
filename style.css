@@ -6,6 +6,7 @@ body {
 }
 
 nav {
+    width: 100%;
     background-color: #562EFF;
     display: flex;
     justify-content: center;
@@ -184,9 +185,14 @@ hr {
     border-radius: 15px;
 }
 
-/* 
-media queary
-@media (max-width:688) {
+
+/* media queary */
+
+/* =======Mobile-Device========== */
+
+@media (max-width:688px) {
+
+
     nav {
         width: 100%;
     }
@@ -195,8 +201,51 @@ media queary
         width: 100%;
     }
 
-    .players {
+    .players,
+    .blogs,
+    .courses {
         grid-template-columns: repeat(1, 1fr);
 
     }
-} */
+
+    .player,
+    .blog,
+    .course {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+}
+
+/* ===========Tablet-Device============ */
+@media (min-width:689px) and (max-width:992px) {
+
+
+    nav {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .player,
+    .blog {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .player {
+        flex-direction: row;
+    }
+
+}
